@@ -97,13 +97,3 @@ h3 { padding: 15px;
     .diceking{height: 150px;}
     .container {width: 300px;}
 }
-
-@media only screen and (max-height: 950px){
-    .main {padding-top: 200px;}
-
-}
-
-@media only screen and (max-height: 850px){
-    .main {padding-top: 100px;}
-
-}
