@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        #786fa7, #3c224c)
+        0 100% no-repeat;
+    background-size: 100% 50%;
+    background-color: #bcbcbc;
+    
+}
+
+#top-half {
+    position: absolute;
+    opacity: 70%;
+    width: 100%;
+    height: 50vh;
+    background-image: url(./images/cassinobg.png);
+    background-repeat: no-repeat;}
+
+.container {
+
+    width: 400px;
+    padding: 28px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #bcbcbc;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.dice-wrapper img {
+    height: 100px;
+}
+
+.dice p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #3c224c;
+    font-family: 'Alfa Slab One', serif;
+
+}
+
+.diceking{
+    height: 200px;
+    z-index: 50;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+}
+
+button {
+    background-color: #3c224c;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+h3 { padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #3c224c;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #top-half {display: none;}
+    .diceking{height: 150px;}
+    .container {width: 300px;}
+}
+
+@media only screen and (max-height: 950px){
+    .main {padding-top: 200px;}
+
+}
+
+@media only screen and (max-height: 850px){
+    .main {padding-top: 100px;}
+
+}
